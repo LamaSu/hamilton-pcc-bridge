@@ -1,0 +1,55 @@
+{
+  "name": "@pcc/hamilton",
+  "version": "0.1.0",
+  "description": "Hamilton ML Prep operator helpers for the Physical Capability Cloud — generate KERNEL_CONFIG, validate options, register liquid-handling capabilities",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "examples",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pcc",
+    "physical-capability-cloud",
+    "hamilton",
+    "microlab-prep",
+    "liquid-handler",
+    "robotics",
+    "lab-automation"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LamaSu/hamilton-pcc-bridge.git"
+  },
+  "homepage": "https://capability.network",
+  "bugs": {
+    "url": "https://github.com/LamaSu/hamilton-pcc-bridge/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  }
+}
